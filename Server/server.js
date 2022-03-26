@@ -43,4 +43,5 @@ io.on("connection", (socket) => {
   });
 });
 
+// For the socket Admin website where no auth is needed at the moment
 instrument(io, { auth: false });
