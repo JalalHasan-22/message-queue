@@ -4,6 +4,10 @@ This is a simple messaging application built using socket.io library.
 this application has a server which will use the dependency "socket.io", and a client which uses socket.io-client.
 to start the server simply type the command "nodemon", to start the client, please type the command "npm start" in the client terminal, which in turns will run the script "snowpack dev" to start our client on port 8080.
 
+#### Note:
+
+for this application to work, CORS needs to be enablled, this can be done by simply defining an array of allowed URLS to share the resources, we simply added the cors object after the port brackets when defining the io instance and define an array of allowed urls.
+
 ### How to run this application
 
 first, please open a terminal for the Server, type the command nodemon, and now the server is running which will create a new socket.io instance and on each new connection, it will create a new socket and logs that socket id to the console.
